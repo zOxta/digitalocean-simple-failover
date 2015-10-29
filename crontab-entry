@@ -1,0 +1,5 @@
+# for the primary server, add the following cron command
+* * * * * sh /path/to/primary-server-failover.sh >> /path/to/primary-server-failover.log 2>&1
+
+# for the secondary server, add the following cron command
+* * * * * sh /path/to/secondary-server-failover.sh >> /path/to/secondary-server-failover.log 2>&1
