@@ -8,7 +8,7 @@ import json
 api_base = 'https://api.digitalocean.com/v2'
 
 def main():
-    headers = {'Authorization': 'Bearer YOU_DIGITAL_OCEAN_API_KEY',
+    headers = {'Authorization': 'Bearer DIGITAL_OCEAN_API_KEY_PLACEHOLDER',
                'Content-type': 'application/json'}
     url = api_base + "/floating_ips"
     r = requests.get(url, headers=headers)
