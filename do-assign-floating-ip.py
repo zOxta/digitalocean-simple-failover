@@ -14,7 +14,7 @@ def usage():
 
 def main(floating_ip, droplet_id):
     payload = {'type': 'assign', 'droplet_id': droplet_id}
-    headers = {'Authorization': 'Bearer YOU_DIGITAL_OCEAN_API_KEY',
+    headers = {'Authorization': 'Bearer DIGITAL_OCEAN_API_KEY_PLACEHOLDER',
                'Content-type': 'application/json'}
     url = api_base + "/floating_ips/{}/actions".format(floating_ip)
     r = requests.post(url, headers=headers,  data=json.dumps(payload))
